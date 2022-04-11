@@ -5,7 +5,7 @@ import Link from "next/link";
 const Home = () => {
     return(
         <>       
-        <section class="p-1 space-y-2">
+        <section className="p-1 space-y-2">
         <h1 className="font-bond text-blue-500">Home page with tailwind</h1>
         <p className="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit...
