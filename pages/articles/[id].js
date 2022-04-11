@@ -1,14 +1,21 @@
 import {useRouter} from "next/router";
+import Head from "next/head"; // to custom the title in the webpage
 
-const SingleArticle = () => {
+// dynamic webpage with title
+const SingleArticle = ({title}) => {
+
     const router = useRouter();
     const id = router.query.id
+    
     return (
-        <div> 
+        <> 
+        <Head>
+        <title>{title} | Dynamic </title>
+        </Head>
             <h1>
                 Single Article { id }
             </h1>
-        </div>
+        </>
     )
 }
 export default SingleArticle;
