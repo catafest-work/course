@@ -3,7 +3,7 @@ import Link from "next/link";
 //import styles from "../styles/Index.module.css";
 
 import Head from "next/head"; // to custom the title in the webpage
-
+import Image from "next/image";
 const Home = () => {
     return(
         <> 
@@ -17,6 +17,13 @@ const Home = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit...
         </p>
         <a href="#">Google link</a>
+        <hr></hr>
+        <Image src="/catafest.jpg" 
+        alt="nicknames: catafest , mythcat "
+        width="50%"
+        height="50%"
+        quality="100"
+        />
         </section>
         </>
     )
